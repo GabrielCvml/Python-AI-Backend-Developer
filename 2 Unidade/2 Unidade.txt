@@ -1,0 +1,46 @@
+Tipos de dados
+
+Texto = str
+Númericos = int,flot, complex
+Sequência = list, tuple, range
+Mapa = dict
+Coleção - set, fronzenset
+Booleano = bool
+Binário =  bytes, bytearray, memoryview
+
+
+int tipos númericos de 1 a ...........
+
+float números de ponto flutuantes ex: 1.5, -10.5323 e etc.
+
+bool = True e False ou 0 e ...
+
+str = cadeia de carecteries ex: "oi", 'oi', """oi""" e etc.
+-------------------------
+Modo interativo
+
+função dir() e help
+dir = listagem de função metodos e etc.
+
+help() = auto explicativo!
+-------------------------
+Variáveis e constantes
+
+Variáveis = base de armazenamento que podem mudar com base no tempo.
+constantes = base de armazenamento que não podem mudar com base no tempo. 
+Para usar constantes em python se nomes de variaveis como letras maiusculas ex: IDADE = 1
+
+Boas praticas
+- O padrão deve ser snake cade = nome_da_pessoa;
+- Escolha nomes sugestivos.
+- Nome de constantes todo em maiusculo
+-----------------------------
+Conversão de tipos
+
+Como converte tipos?
+Ex: no arquivo
+--------------------------
+Função entrada e saída
+
+Lendo valores com a função input();
+Função print() para mostrar na saida. sep=#. end=".../n".

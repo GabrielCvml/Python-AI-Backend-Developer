@@ -1,0 +1,96 @@
+Operadores aritméticos
+
+Execução de operações matemáticas!
+
++,-,*,/,//,%,**
+
+% - resto da divisão
+
+** - exponenciação 
+
+precedencias dos operadores
+
+x = 10 - 5 * 2 = ?
+ordem de prioridade = Parêntesis, Expoêntes, Multiplicação e divisão, soma e subtração.
+--------------------------------
+Operadores de comparação 
+
+São operadores utilizados pata comparar dois valores
+
+igualdade - ==
+Diferença - !=
+Maior que - >
+Menor que - <
+Maior e igual que - >=, <=
+----------------------------------------
+Operadores de atribuição
+
+São operadores utilizados para definir o valor inicial ou sobrescrever o valor de3 uma variável.
+
+valor = 10
+
+atribuição simples - = ex: valor = 10
+Atribuição com adição - += ex: valor += 10; = 20
+Atribuição com subtração - -=
+Atribuição com Multiplicação - *=
+divisão - /= , //=
+Modulo - %=
+exponenciação - **=
+--------------------------
+Operadores lógicos
+
+São operadores utilizados em conjunto com os operadores de comparação, para montar uma expressão lógica.
+
+saldo = 1000
+saque = 200
+limite = 100
+
+Operador E - and ex:
+saldo >= saque and saque <= limite
+false
+
+Operador ou - or:
+saldo >= saque and saque <= limite
+true
+
+Operador Negação - not 
+not 1000 > 1500
+true
+not "saque"
+false
+not ""
+true
+
+Parênteses
+(saldo >= saque and saque <= limite) or (conta_especial and saldo >= saque)
+true
+-----------------------------
+Operadores de identidade 
+
+São operadores utilizados para comparar se os dois objetos testadosocupam a mesma posição na memória.
+
+curso = "Curso de python"
+nomne_curso = curso
+saldo, limite = 200, 200
+
+curso is nomne_curso
+true
+
+curso is not nomne_curso
+false
+
+saldo is limite
+--------------------------------
+Operadores de associação
+
+São operadores utilizados para verificar se um objeto está presente em um sequência
+
+curso = "Curso de Python"
+fruta = ["lranja" , "uva", "limão"]
+saque = [10, 20]
+
+"Python" in curso
+
+"maçã" not in fruta
+
+100 in saque

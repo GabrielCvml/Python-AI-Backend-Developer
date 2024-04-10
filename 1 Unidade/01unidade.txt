@@ -1,0 +1,20 @@
+Prof: Guilherme carvalho
+------------------------------
+- Trabalho com qualidade, independente do nível;
+- Onde devo usar Python?
+- História do Python!
+- Anos 2000, compreensão de lixo.
+- 2003 versão 3.0. perda de retro compatibilidade.
+- Versão atual 3.10!
+- Não é tão boa para apps Mobiles! 
+- Auto interpretação!
+- Muitas compatibilidades e multiparadigma.
+-----------------------------------------
+Configuração do ambiente de desenvolvimento
+python -V = verificação da versão do python 
+python3 -V 
+-----------------------------------------
+Meu primeiro programa
+
+Famosa reiceita de bolo e a sequencia de passos.
+Usamos o tipo .py para criar arquivos com códigos python

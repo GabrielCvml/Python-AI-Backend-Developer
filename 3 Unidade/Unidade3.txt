@@ -1,0 +1,82 @@
+Gerenciamento de versões de um código!
+--------------------------------------
+O que é Git?
+
+Sistema de controle de versão distribuido.
+Projeto de núcleo do linux
+---------------------------------------
+O que é o GitHub?
+
+plataforma de hospedagem de código para controle de versão com git.
+2008 - 2018 (compra da microsoft)
+---------------------------------------
+Dica uso de token: 
+git config --global credential.helper store (Salva pernamentimente)
+----------------------------------------
+Chaves SSH:
+Seguir o guia do git.
+---------------------------------------
+echo resumo/ > .gitignore
+----------------------------------
+Removendo e desfazendo:
+ 
+init:
+rm -rf .git
+
+restaurar arquivos:
+git restore READMI.md
+
+Mudar mensagem do ultimo commit: (último realizado)
+git commit --amend -m "Nova mensagem"
+git commit --amend
+
+Desfase commit:
+git reset --soft {rest do commit (git log)} - Adiciona os arquivos na area de preparação (depois do add)
+git reset --mixed {rest} - colocar ele antes do (git add)
+git reset --hard {rest} - Apaga os arquivos! 
+git reser pasta/nome_do_arquivo
+git restore --staged pasta/nome_do_arquivo
+
+git reflog = mostra tudo.
+--------------------------------------
+Como trabalhar com braches.
+
+git checkout -b teste -  criação
+git checkout main - voltar 
+git branch -v - lista ultimos commits de cada branch
+
+git merge teste - mesclar
+
+git branch -d test - excluir
+---------------------------------------
+Dicas e Meteris úteis.
+
+git diff main origin/main - compara as branchs
+
+git clone url --branch nome_do_branch --single-branch - escolha a branch que você que clonar
+
+git stash - arquiva modificações
+git stash pop - ecluir a alteração mais recente da pilha.
+git stash apply - retorna a modificação feita 
+---------------
+Materiais Complementares
+ 
+Nossos materiais complementares e de apoio têm como objetivo apresentar informações para facilitar e enriquecer a sua jornada de aprendizado. Para isso, links úteis (como slides, repositórios e páginas oficiais) serão disponibilizados, além de dicas sobre como se destacar na DIO e no mercado de trabalho 😉
+ 
+Repositório Git
+ 
+O Git é um conceito essencial no mercado de trabalho atualmente, por isso sempre reforçamos sua importância em nossa metodologia educacional. Por isso, todo código-fonte desenvolvido durante este conteúdo foi versionado no seguinte endereço para que você possa consultá-lo a qualquer momento:
+ 
+https://github.com/elidianaandrade/dio-curso-git-github
+ 
+Slides
+Versionamento de Código com Git e GitHub.pptx
+ 
+Dicas/Links Úteis
+ 
+Por fim, disponibilizamos alguns links úteis para que você possa se desenvolver ainda mais através de referências oficiais das tecnologias, páginas de documentação e/ou fóruns de discussão relevantes. Nesse contexto, seguem algumas sugestões:
+ 
+Artigos/Fórum: você pode compartilhar conteúdos técnicos através de Artigos (visíveis globalmente na plataforma da DIO). Por outro lado, você também pode compartilhar suas conquistas e dúvidas usando os Fóruns (que são específicos para cada experiência educacional na DIO, como um Bootcamp por exemplo);
+Rooms: caso você esteja inscrito(a) em uma experiência educacional na DIO (como um Bootcamp, por exemplo) você terá acesso ao Rooms. O Rooms é uma ferramenta de bate-papo em tempo real onde todos os inscritos podem interagir, compartilhando dúvidas e dicas (que podem conter imagens e snippets de código-fonte);
+Pesquise na Web: pode parecer óbvio, mas é importante frisar a importância das engines de busca no dia-a-dia de um profissional de TI. Caso não encontre o que procura dentro da DIO, pesquise sobre o assunto (conceito, dúvida, erro etc) na Internet (dê um Google), pois na maioria das vezes você será levado à páginas incríveis como o StackOverflow que salvarão o seu dia 😎
+ 
