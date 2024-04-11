@@ -1,0 +1,18 @@
+Identação e blocos
+
+importancia da Identação para delimitar os blocos.
+Exemplo no código.
+----------------------
+Estrutura condicionais!
+
+if / if-else / elif
+
+if ternario
+
+status = "Sucesso" if saldo >= saque else "falha"
+print(f"{status} ao realizar")
+
+--------------
+Estrutura de repetição!
+
+for e while

@@ -1,0 +1,23 @@
+String e fateamento
+
+valor = Olá Mundo
+
+.upper() - OLÁ MUNDO
+.lower() - olá mundo
+.title() - Olá mundo
+
+valor = "   Olá Mundo  "
+
+.strip() - "Olá Mundo"
+.lstrip() - "Olá Mundo  "
+.rstrip() - "  Olá Mundo"
+
+valor =  Olá Mundo
+
+.center(20, "#") - "##Olá Mundo##"
+".".join(valor) -  O.l.á.M.u.n.d.o
+-----------------------------------
+Interpolação de varaveis
+
+colocar variáveis em strings
+-----------------------------------------
