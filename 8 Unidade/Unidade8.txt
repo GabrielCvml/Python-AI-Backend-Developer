@@ -1,0 +1,58 @@
+Listas: Criando e acesso aos dados
+
+frurtas =  []
+
+frurtas = ["Laranja","Maçã","Uva"]
+
+letras = list("python")
+
+numeros = list(range(10))
+
+carro = ["Cross fox" , "1.0", 321331, 2011, 3000, "Paraíba", True]
+
+frutas[0] - Laranja
+frutas[2] - Uva
+
+frutas[-1] - Uva
+
+matriz = [
+    [1,"a",2],
+    ["b",3,4],
+    [6,5,"c"]
+]
+
+matriz[0] - [1,"a",2]
+matriz[0][0] - 1
+matriz[-1][0] - 6
+
+lista = ["O","r","t","y","u","i"]
+
+lista[2:] - t, y, u, i
+
+carros =  ["gol","celta","palio"]
+
+for indice, carro in enumerate(carro):
+    print(f"{indice}: {carro}")
+
+.append() - colocar números em uma lista
+
+versão em uma linha 
+pares = [numero for numero in numeros if numero % 2 == 0]
+
+-------------------------------
+Trabalhando com Listas
+
+[].append - adiona a lista um valor
+[].clear - tira os elementos da lista
+[].copy - retorna uma lista "copiada"
+[].extend - mescla elementos a lista
+[].index - retorna o valor do elemento na lista
+[].pop - remove o valor da lista o retorna 
+[].remove -  remove um valor especifico em uma lista
+[].reverse - Inverte lista
+[].sort - ordena
+[].sort(reverse=true)
+.sort(key=lambda x: len(x))
+.sort(key=lambda x: len(x), reverse =True)
+len(lista) - tamanho da lista
+sorted(lista,key=lambda x: len(x), reverse =True )

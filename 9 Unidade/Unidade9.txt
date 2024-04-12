@@ -1,0 +1,20 @@
+Tupla
+
+Tuplas são estruturas de dados muito paracidas com as listas, a principal diferença é que tuplas são IMUTAVEIS.
+
+frutas = ("laranja", "pera", "uva",)
+
+tuplas aninhadas:
+
+matriz = (
+    (1,"a",2),
+    ("b",3,4),
+    (6,5,"c"),
+)
+matriz[0] - [1,"a",2]
+matriz[0][0] - 1
+matriz[-1][0] - 6
+
+metodos
+
+.index e len()

@@ -1,0 +1,19 @@
+Conjuntos
+
+declarada com {}
+
+frutas = {"Maçã","Banana","Uva"}
+
+funções:
+
+{}.union
+{}.tersection - compara os valores de dois conjuntos!
+{}.difference -  mostra os valores diferentes
+{}.interserction - mostra os valores que são igauis
+{}.symmetric_difference - mostra a differença entre os dois
+{}.issubset - compara os dois e rotorna TRue ou False
+{}.isdisjoint - compara e retorna true ou false se os valores forem diferentes entre eles.
+{}.add - adicina o valor no final do conjuntos
+{}.clear
+{}.copy
+{}.discard - remove um valor 

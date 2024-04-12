@@ -1,0 +1,63 @@
+Dicionarios em python
+
+criar objetos com chave e valor
+
+ex:
+
+pessoa = {"nome": "Gabriel", "idade": 28}
+
+pessoa = dict(nome="Gabriel", idade=28)
+
+pessoa["telefone"] = "333-333" -  adionou um valor ao Dicionario
+
+Acessar valor:
+
+pessoa["nome"] - "Gabriel"
+pessoa["idade"] - 28
+
+pessoa["nome"] = "Maria" - Mudou o valor
+
+Dicionarios aninahdos
+
+contatos = {
+    "g@emial.com" : {"nome": "Gabriel", "telefone": 3333:3333},
+    "t@emial.com" : {"nome": "tabriel", "telefone": 4444:4444},
+}
+
+contatos["g@emial.com"]["nome"] - "Gabriel"
+
+usando repetição: 
+
+for chave in contatos:
+    print(chave,contatos[chave])
+
+for chave, valor in contatos.intems():
+    print(chave,valor)
+----------------------------------------
+Metodos de classe dict
+
+.clear()
+.copy()
+.fromkeys() ex:
+    dict.fromkeys(["nome","telefone"]) - {"nome": None, "telefone": None}
+    dict.fromkeys(["nome","telefone"], "vazio") - {"nome": vazio, "telefone": vazio}
+.get()
+    contato.get("chave") - None - procura um valor
+    contato.get("chave", {}) - {} -  procura um valor caso não encontre retorna {} (a sua escolha)
+    contato.get("g@emial",{}) - caso encontre retorna o que foi pedido.
+.items() - retorna uma lista de tuplas
+.keys() - retorna as chaves
+.pop() - remove e retorna o valor removido
+    .pop("g@emial", {}) -  remove e retorna o valor removido, caso não encontre mostra o que foi colocado {}
+.popitem() - remove o item na sequencia 
+.setdefault("nome","Gabriel") - caso já exista retorna o valor colocado "Gabriel"
+    .setdefault("idade",28) - caso não exista adiciona no Dicionario
+.update() - update de valor
+    .update({"g@emial": ga}) - atualiza o Dicionario por completo, pode deletar keys e valor, caso ele encontre uma keys com esse valor
+    caso não existe ele adiciona um novo elemento ao Dicionario
+.values() - retorna os valores
+
+in - verifica se o valor em um Dicionario
+del - remove o objetos ou toda a chave
+    del contatos["g@emial"]["telefone"]
+    del contatos["g@emial"]
