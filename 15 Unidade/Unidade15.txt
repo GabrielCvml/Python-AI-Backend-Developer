@@ -1,0 +1,51 @@
+
+O que é POO e como usar no Python!
+
+O que é um paradigmas de programação?
+    É um estilo de programação.
+
+O que é programação orientada a objetos?
+    O paradigma de programação orientada a objetos estrutura o código abstraindo problemas em objetos do mundo real, facilitando o entedimento do código e tornando-o mais modular e extensível. Os dois conceitos chaves para aprender POO são: classes e objetos! 
+----------------------------------------------
+Coneito de classes e objetos!
+    Uma classe define as caracteristicas e comportamentos de um objeto, porém não conseguimos usá-las diretemanete. Já os objetos podemos usá-los e eles possuem as caracteristicas e comportamentos que foram definidos nas classes.
+
+exemplo: Classe
+
+class Cachorro:
+    def __init__(self, nome, cor, acordado=True):
+        self.nome = nome
+        self.cor = cor
+        self.acordado = acordado
+    
+    def latir(self):
+        print("Auau")
+    
+    def dormir(self):
+        self.acordado = False
+        print("Zzzzzzz")
+
+exemplo: objeto
+
+cao_1 = Cachorro("Pretinho","preto",False)
+cao_2 = Cachorro("Branquinha","branco")
+
+cao_1.latir()
+
+print(cao_2.acordado)
+cao_2.dormir()
+print(cao_2.acordado)
+-----------------------------------------------
+Construtores e Destrutores
+
+Método Construtor
+    O método Construtor sempre é executado quando uma nova instância da classe é criada. Nesse método inicializamos o estado do nosso objeto. Para declarar o método construtor da classe, criamos um método com o nome __init__.
+
+    class Cachorro:
+    def __init__(self, nome, cor, acordado=True):
+        self.nome = nome
+        self.cor = cor
+        self.acordado = acordado
+
+Método destrutor
+    O método destrutor sempre é executado quando uma instância (objeto) é destruída. Destrutores em Python não são tão necessários quanto em C++ porque o Python tem um coletor de lixo que lida com o gerenciamento de memória automaticamente. Para declarar o método destrutor da classe, criamos um método com o nome __del__.
