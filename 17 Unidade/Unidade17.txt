@@ -2,3 +2,31 @@ Emcapsulamento
 
 Proteção de acesso
     O Emcapsulamento é um dos conceitos fundamentais em programação orientada a objetos. Ele descreve a ideia de agrupar dados e os métodos que manipulam esses dados em uma unidade. Isso impõe restrições ao acesso direto a variáveis e métodos e pode evitar a modificação acidentak de dados. Para evitar alterações acidentais, a variável de um objeto só pode ser alterado pelo método desse objeto.
+----------------------------
+Recursos publicos e privados 
+
+Modificadores de acesso
+    Em linguagens como Java e C++, existem palavras reservadas para definir o nível de acesso aos atributos e métodos da classe. Em python não temos palavras reservadas, porém usamos convenções no nome do recurso, para definir se a variável é pública ou privada.
+
+    publico - pode ser acessado de fora da classe
+    privado - Só pode ser acessado pela classe
+
+Público/Privado 
+    Todos os recursos são publicos, a menos que o nome inicie com underline ( _ ). Ou seja, o interpretador Python não irá garantir a proteção do recurso, mas por ser uma convenção amplamente adotada na comunidade, quando encontramos uma variável e/ou método com nome iniciado por underline sabemos que não podemos manipular o seu valor diretemente, ou invocar o método fora do escopo da classe.
+    
+    Exemplo: 
+
+    class Conta:
+        def __init__(self, _saldo=0):
+            self.saldo = saldo
+    
+        def depositar(self, valor):
+            pass
+        
+        def sacar(self, valor):
+            pass
+-----------------------------------------
+Propriedades
+
+Pata o que servem?
+    Como o property() do Python, você pode criar atributis gerenciados em suas classes. Você pode usar atributos fgerenciados, também conhecidos como propriedades, quando precisar modificar sua implementação interna sem alterar a sua API pública da classe.
